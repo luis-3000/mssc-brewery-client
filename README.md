@@ -1,2 +1,2 @@
 # mssc-brewery-client
-Spring RestTemplate Consumer Service
+Spring RestTemplate Consumer (Client) Service
