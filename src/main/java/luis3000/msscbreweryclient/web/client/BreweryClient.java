@@ -6,6 +6,7 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+import java.net.URI;
 import java.util.UUID;
 
 /*
@@ -21,6 +22,10 @@ public class BreweryClient {
 
     public BreweryClient(RestTemplateBuilder restTemplateBuilder) {
         this.restTemplate = restTemplateBuilder.build();
+    }
+
+    public URI saveNewBeer(BeerDto beerDto) {
+        return restTemplate.postForLocation(apihost + BEER_PATH_V1, beerDto);
     }
 
     public BeerDto getBeerById(UUID uuid) {
