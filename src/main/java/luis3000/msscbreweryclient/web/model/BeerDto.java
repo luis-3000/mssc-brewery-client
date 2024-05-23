@@ -9,8 +9,8 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
-/*
- * Created by Jose Castillo 5/18/24.
+/**
+ * Created by jlc on 5/23/2024.
  */
 @Data
 @NoArgsConstructor

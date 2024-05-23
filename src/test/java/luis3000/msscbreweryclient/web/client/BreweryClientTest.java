@@ -1,6 +1,7 @@
 package luis3000.msscbreweryclient.web.client;
 
 import luis3000.msscbreweryclient.web.model.BeerDto;
+import luis3000.msscbreweryclient.web.model.CustomerDto;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,6 +11,9 @@ import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Created by jlc on 5/23/2024.
+ */
 @SpringBootTest
 class BreweryClientTest {
 
@@ -42,5 +46,40 @@ class BreweryClientTest {
     @Test
     void testDeleteBeer() {
         breweryClient.deleteBeer(UUID.randomUUID());
+    }
+
+
+    /* TEST DRIVEN DEVELOPMENT:
+     * THESE TESTS WILL DETERMINE HOW THE METHODS WILL BE IMPLEMENTED.
+     */
+    @Test
+    void getCustomerById() {
+        CustomerDto customerDto = breweryClient.getCustomerById(UUID.randomUUID());
+        assertNotNull(customerDto);
+    }
+
+    @Test
+    void testSavedNewCustomer() {
+        //Given
+        CustomerDto customerDto = CustomerDto.builder().name("Joe").build();
+
+        URI uri = breweryClient.saveNewCustomer(customerDto);
+
+        assertNotNull(uri);
+
+        System.out.println(uri.toString());
+    }
+
+    @Test
+    void testUpdateCustomer() {
+        //Given
+        CustomerDto customerDto = CustomerDto.builder().name("Jim").build();
+
+        breweryClient.updateCustomer(UUID.randomUUID(), customerDto);
+    }
+
+    @Test
+    void testDeleteCustomer() {
+        breweryClient.deleteCustomer(UUID.randomUUID());
     }
 }
