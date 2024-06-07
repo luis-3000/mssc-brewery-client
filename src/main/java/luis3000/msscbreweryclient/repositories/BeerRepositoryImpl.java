@@ -56,7 +56,7 @@ public class BeerRepositoryImpl implements BeerRepository {
 
     @Override
     public long count() {
-        return 2;
+        return 0; //@To do: to implement
     }
 
     @Override
