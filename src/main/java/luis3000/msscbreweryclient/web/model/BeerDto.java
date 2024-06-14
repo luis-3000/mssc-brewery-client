@@ -39,7 +39,7 @@ public class BeerDto {
 
     @NotNull
     @NotBlank
-    private BeerStyle beerStyle;
+    private BeerStyleEnum beerStyleEnum;
 
     @Positive
     @NotNull
