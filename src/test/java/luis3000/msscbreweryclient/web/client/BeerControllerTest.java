@@ -20,19 +20,13 @@ import org.springframework.util.StringUtils;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-
-//import static org.mockito.ArgumenMatchers.any;
-//import static org.mockito.BDDMochito.given;
-////import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
-import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
 import static org.springframework.restdocs.payload.PayloadDocumentation.*;
 import static org.springframework.restdocs.request.RequestDocumentation.*;
 import static org.springframework.restdocs.snippet.Attributes.key;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(RestDocumentationExtension.class)
 @AutoConfigureRestDocs(uriScheme = "https", uriHost = "dev.luis3000", uriPort = 80)
@@ -47,9 +41,9 @@ class BeerControllerTest {
     ObjectMapper objectMapper;
 
     @Test
-    void getBeetById() throws Exception {
+    void getBeerById() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/beer/" + UUID.randomUUID())
-                        .param("iscold", "yes")
+                        .param("isCold", "yes")
                         .accept(MediaType.APPLICATION_JSON))
         .andExpect(status().isOk())
                 .andDo(document("v1/beer-get",
@@ -57,7 +51,7 @@ class BeerControllerTest {
                                 parameterWithName("beerId").description("UUID of desired beer to get.")
                         ),
                         requestParameters(
-                                parameterWithName("iscold").description("Is Beer Cold Query param")
+                                parameterWithName("isCold").description("Is Beer Cold Query param")
                         ),
                         responseFields(
                                 fieldWithPath("id").description("Id of Beer"),

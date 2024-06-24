@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: luis3000.msscbreweryclient.web.client.BreweryClientTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 1.847 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BreweryClientTest
-getCustomerById  Time elapsed: 0.069 s  <<< ERROR!
-org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/api/v1/customer/fcd95daa-730d-4e97-a4bb-e812de8ab876": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 1.825 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BreweryClientTest
+getCustomerById  Time elapsed: 0.068 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/api/v1/customer/c5044a0c-4cb8-4361-ad86-b419ce874b15": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.getCustomerById(BreweryClientTest.java:57)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.getCustomerById(BreweryClientTest.java:57)
 Caused by: java.net.ConnectException: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.getCustomerById(BreweryClientTest.java:57)
 
-saveNewBeer  Time elapsed: 0.013 s  <<< ERROR!
+saveNewBeer  Time elapsed: 0.016 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8080/api/v1/beer/": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.saveNewBeer(BreweryClientTest.java:34)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
@@ -18,31 +18,31 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8
 Caused by: java.net.ConnectException: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.saveNewBeer(BreweryClientTest.java:34)
 
-testUpdateBeer  Time elapsed: 0.005 s  <<< ERROR!
-org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8080/api/v1/beer/4487dce5-38dd-4227-bab5-8218400c976c": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+testUpdateBeer  Time elapsed: 0.006 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8080/api/v1/beer/7f025220-c6d4-478b-ac34-fc4c4ef8a88e": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testUpdateBeer(BreweryClientTest.java:43)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testUpdateBeer(BreweryClientTest.java:43)
 Caused by: java.net.ConnectException: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testUpdateBeer(BreweryClientTest.java:43)
 
-getBeerById  Time elapsed: 0.01 s  <<< ERROR!
-org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/api/v1/beer/d116457d-9981-40c3-8fd8-3e99e3569b62": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+getBeerById  Time elapsed: 0.012 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/api/v1/beer/90f35a58-958d-417c-94ef-a145fac22698": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.getBeerById(BreweryClientTest.java:25)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.getBeerById(BreweryClientTest.java:25)
 Caused by: java.net.ConnectException: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.getBeerById(BreweryClientTest.java:25)
 
-testUpdateCustomer  Time elapsed: 0.005 s  <<< ERROR!
-org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8080/api/v1/customer/f2faae06-137e-4345-93bc-a62eda7cc590": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+testUpdateCustomer  Time elapsed: 0.007 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8080/api/v1/customer/3b37faad-a97f-47ac-8f90-5b1f9a7cbd2c": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testUpdateCustomer(BreweryClientTest.java:78)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testUpdateCustomer(BreweryClientTest.java:78)
 Caused by: java.net.ConnectException: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testUpdateCustomer(BreweryClientTest.java:78)
 
-testSavedNewCustomer  Time elapsed: 0.004 s  <<< ERROR!
+testSavedNewCustomer  Time elapsed: 0.006 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8080/api/v1/customer/": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testSavedNewCustomer(BreweryClientTest.java:66)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
@@ -50,16 +50,16 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8
 Caused by: java.net.ConnectException: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testSavedNewCustomer(BreweryClientTest.java:66)
 
-testDeleteBeer  Time elapsed: 0.004 s  <<< ERROR!
-org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8080/api/v1/beer/ab0dfce1-70d7-4e1d-9b37-83822920ad2c": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+testDeleteBeer  Time elapsed: 0.005 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8080/api/v1/beer/34028dbd-19e7-4b39-ba82-10766f281eff": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testDeleteBeer(BreweryClientTest.java:48)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testDeleteBeer(BreweryClientTest.java:48)
 Caused by: java.net.ConnectException: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testDeleteBeer(BreweryClientTest.java:48)
 
-testDeleteCustomer  Time elapsed: 0.004 s  <<< ERROR!
-org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8080/api/v1/beer/0734c648-9a81-4d4f-885e-57a36ee4e6fc": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+testDeleteCustomer  Time elapsed: 0.005 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8080/api/v1/beer/5125d8a4-1251-48c0-a4dd-a393b26633c7": Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testDeleteCustomer(BreweryClientTest.java:83)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at luis3000.msscbreweryclient.web.client.BreweryClientTest.testDeleteCustomer(BreweryClientTest.java:83)
