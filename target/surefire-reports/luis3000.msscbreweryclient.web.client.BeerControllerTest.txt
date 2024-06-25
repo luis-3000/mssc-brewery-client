@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: luis3000.msscbreweryclient.web.client.BeerControllerTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 2.459 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BeerControllerTest
-updateBeerById  Time elapsed: 0.329 s  <<< ERROR!
-java.lang.IllegalArgumentException: Not enough variable values available to expand 'beerId'
-	at luis3000.msscbreweryclient.web.client.BeerControllerTest.updateBeerById(BeerControllerTest.java:99)
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.366 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BeerControllerTest
+updateBeerById  Time elapsed: 0.364 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<204> but was:<404>
+	at luis3000.msscbreweryclient.web.client.BeerControllerTest.updateBeerById(BeerControllerTest.java:102)
 
-saveNewBeer  Time elapsed: 0.009 s  <<< ERROR!
-java.lang.IllegalArgumentException: Not enough variable values available to expand 'beerId'
-	at luis3000.msscbreweryclient.web.client.BeerControllerTest.saveNewBeer(BeerControllerTest.java:76)
+saveNewBeer  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<404>
+	at luis3000.msscbreweryclient.web.client.BeerControllerTest.saveNewBeer(BeerControllerTest.java:79)
 
-getBeetById  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.IllegalArgumentException: Not enough variable values available to expand 'beerId'
-	at luis3000.msscbreweryclient.web.client.BeerControllerTest.getBeetById(BeerControllerTest.java:45)
+getBeerById  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at luis3000.msscbreweryclient.web.client.BeerControllerTest.getBeerById(BeerControllerTest.java:48)
 

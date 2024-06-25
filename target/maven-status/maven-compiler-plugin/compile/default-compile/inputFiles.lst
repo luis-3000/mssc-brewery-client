@@ -10,5 +10,6 @@
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/model/BeerDto.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/client/BreweryClient.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/controller/MvcExceptionHandler.java
+/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/model/BeerPageList.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/model/BeerStyleEnum.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/config/NIORestTemplateCustomizer.java

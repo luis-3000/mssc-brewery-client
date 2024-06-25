@@ -13,4 +13,5 @@ luis3000/msscbreweryclient/repositories/BeerRepository.class
 luis3000/msscbreweryclient/web/config/BlockingRestTemplateCustomizer.class
 luis3000/msscbreweryclient/web/model/CustomerDto.class
 luis3000/msscbreweryclient/web/domain/Beer.class
+luis3000/msscbreweryclient/web/model/BeerPageList.class
 luis3000/msscbreweryclient/web/model/BeerDto.class
