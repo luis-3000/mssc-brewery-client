@@ -1,10 +1,14 @@
+/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/services/BeerService.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/domain/Beer.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/client/package-info.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/bootstrap/BeerLoader.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/repositories/BeerRepository.java
+/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/mappers/BeerMapper.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/controller/BeerController.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/repositories/BeerRepositoryImpl.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/model/CustomerDto.java
+/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/controller/NotFoundException.java
+/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/services/BeerServiceImpl.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/MsscBreweryClientApplication.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/config/BlockingRestTemplateCustomizer.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/model/BeerDto.java
@@ -12,4 +16,5 @@
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/controller/MvcExceptionHandler.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/model/BeerPageList.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/model/BeerStyleEnum.java
+/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/mappers/DateMapper.java
 /Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/src/main/java/luis3000/msscbreweryclient/web/config/NIORestTemplateCustomizer.java

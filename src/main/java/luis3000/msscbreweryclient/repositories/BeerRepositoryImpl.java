@@ -6,13 +6,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
 import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class BeerRepositoryImpl implements BeerRepository {
-
-
 
     @Override
     public Iterable<Beer> findAll(Sort sort) {
@@ -77,5 +76,10 @@ public class BeerRepositoryImpl implements BeerRepository {
     @Override
     public void deleteAll() {
 
+    }
+
+    @Override
+    public Optional<Beer> fingById(UUID beerId) {
+        return Optional.of(new Beer());
     }
 }

@@ -1,6 +1,7 @@
 package luis3000.msscbreweryclient.web.domain;
 
 import lombok.*;
+import luis3000.msscbreweryclient.web.controller.NotFoundException;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
@@ -48,4 +49,8 @@ public class Beer {
     private Integer minOnHand;
     private Integer quantityOnHand;
     private Integer quantityToBrew;
+
+    public Beer orElseThrow(NotFoundException e) {
+        return new Beer();
+    }
 }

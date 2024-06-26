@@ -12,9 +12,10 @@ import java.util.Optional;
 import java.util.UUID;
 
 /**
- * Created by jlc on 5/26/2024.
+ * Created by jlc on 6/25/2024.
  */
 @Repository
 public interface BeerRepository extends PagingAndSortingRepository<Beer, UUID> {
 
+    Optional<Beer> fingById(UUID beerId);
 }

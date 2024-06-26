@@ -1,8 +1,11 @@
+luis3000/msscbreweryclient/web/mappers/DateMapper.class
 luis3000/msscbreweryclient/MsscBreweryClientApplication.class
 luis3000/msscbreweryclient/web/controller/MvcExceptionHandler.class
 luis3000/msscbreweryclient/web/model/CustomerDto$CustomerDtoBuilder.class
 luis3000/msscbreweryclient/web/client/BreweryClient.class
+luis3000/msscbreweryclient/web/controller/NotFoundException.class
 luis3000/msscbreweryclient/web/controller/BeerController.class
+luis3000/msscbreweryclient/web/mappers/BeerMapper.class
 luis3000/msscbreweryclient/web/config/NIORestTemplateCustomizer.class
 luis3000/msscbreweryclient/web/model/BeerStyleEnum.class
 luis3000/msscbreweryclient/repositories/BeerRepositoryImpl.class
@@ -11,7 +14,9 @@ luis3000/msscbreweryclient/web/model/BeerDto$BeerDtoBuilder.class
 luis3000/msscbreweryclient/web/domain/Beer$BeerBuilder.class
 luis3000/msscbreweryclient/repositories/BeerRepository.class
 luis3000/msscbreweryclient/web/config/BlockingRestTemplateCustomizer.class
+luis3000/msscbreweryclient/services/BeerService.class
 luis3000/msscbreweryclient/web/model/CustomerDto.class
+luis3000/msscbreweryclient/services/BeerServiceImpl.class
 luis3000/msscbreweryclient/web/domain/Beer.class
 luis3000/msscbreweryclient/web/model/BeerPageList.class
 luis3000/msscbreweryclient/web/model/BeerDto.class

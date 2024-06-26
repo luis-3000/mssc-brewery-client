@@ -41,7 +41,7 @@ class BeerControllerTest {
     ObjectMapper objectMapper;
 
     @Test
-    void getBeerById() throws Exception {
+    void getBeerByIdById() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/beer/" + UUID.randomUUID())
                         .param("isCold", "yes")
                         .accept(MediaType.APPLICATION_JSON))
