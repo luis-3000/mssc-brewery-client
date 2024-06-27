@@ -1,6 +1,8 @@
 package luis3000.msscbreweryclient.web.client;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import luis3000.msscbreweryclient.bootstrap.BeerLoader;
+import luis3000.msscbreweryclient.services.BeerService;
 import luis3000.msscbreweryclient.web.model.BeerDto;
 import luis3000.msscbreweryclient.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
@@ -8,18 +10,24 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.MediaType;
 import org.springframework.restdocs.RestDocumentationExtension;
 import org.springframework.restdocs.constraints.ConstraintDescriptions;
 import org.springframework.restdocs.payload.FieldDescriptor;
+import org.springframework.stereotype.Component;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.util.StringUtils;
 
+import javax.print.attribute.standard.Media;
 import java.math.BigDecimal;
 import java.util.UUID;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.willReturn;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.payload.PayloadDocumentation.*;
 import static org.springframework.restdocs.request.RequestDocumentation.*;
@@ -31,7 +39,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(RestDocumentationExtension.class)
 @AutoConfigureRestDocs(uriScheme = "https", uriHost = "dev.luis3000", uriPort = 80)
 @WebMvcTest(BeerControllerTest.class)
-@ComponentScan(basePackages = "guru.springframework.sfgrestdocsexample.web.mappers")
+//@ComponentScan(basePackages = "guru.springframework.sfgrestdocsexample.web.mappers")
+@ComponentScan(basePackages = "luis3000.msscbreweryclient.web.mappers")
 class BeerControllerTest {
 
     @Autowired
@@ -40,13 +49,19 @@ class BeerControllerTest {
     @Autowired
     ObjectMapper objectMapper;
 
+    @MockBean
+    BeerService beerService;
+
     @Test
-    void getBeerByIdById() throws Exception {
+    void getBeerById() throws Exception {
+
+        given(beerService.getById(any())).willReturn(getValidBeerDto());
+
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/beer/" + UUID.randomUUID())
                         .param("isCold", "yes")
                         .accept(MediaType.APPLICATION_JSON))
-        .andExpect(status().isOk())
-                .andDo(document("v1/beer-get",
+                        .andExpect(status().isOk())
+                        .andDo(document("v1/beer-get",
                         pathParameters(
                                 parameterWithName("beerId").description("UUID of desired beer to get.")
                         ),
@@ -71,6 +86,8 @@ class BeerControllerTest {
         BeerDto beerDto = getValidBeerDto();
         String beerDtoToJson = objectMapper.writeValueAsString(beerDto);
 
+        given(beerService.saveNewBeer(any())).willReturn(getValidBeerDto());
+
         ConstrainedFields fields = new ConstrainedFields(BeerDto.class);
 
         mockMvc.perform(post("/api/v1/beer/")
@@ -93,6 +110,9 @@ class BeerControllerTest {
 
     @Test
     void updateBeerById() throws Exception {
+
+        given(beerService.updateBeer(any(), any())).willReturn(getValidBeerDto());
+
         BeerDto beerDto = getValidBeerDto();
         String beerDtoToJson = objectMapper.writeValueAsString(beerDto);
 
@@ -107,7 +127,7 @@ class BeerControllerTest {
                 .beerName("My Beer")
                 .beerStyleEnum(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.99"))
-                .upc(123123123123L)
+                .upc(BeerLoader.BEER_1_UPC)
                 .build();
     }
 

@@ -3,7 +3,6 @@ package luis3000.msscbreweryclient.web.domain;
 import lombok.*;
 import luis3000.msscbreweryclient.web.controller.NotFoundException;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -42,7 +41,7 @@ public class Beer {
     private String beerStyle;
 
     @Column(unique = true)
-    private Long upc;
+    private String upc;
 
     private BigDecimal price;
 
