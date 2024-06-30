@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: luis3000.msscbreweryclient.web.client.BeerControllerTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.203 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BeerControllerTest
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.368 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BeerControllerTest
 updateBeerById  Time elapsed: 0.108 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<204> but was:<404>
-	at luis3000.msscbreweryclient.web.client.BeerControllerTest.updateBeerById(BeerControllerTest.java:122)
+	at luis3000.msscbreweryclient.web.client.BeerControllerTest.updateBeerById(BeerControllerTest.java:123)
 
-saveNewBeer  Time elapsed: 0.023 s  <<< FAILURE!
+saveNewBeer  Time elapsed: 0.015 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
-	at luis3000.msscbreweryclient.web.client.BeerControllerTest.saveNewBeer(BeerControllerTest.java:96)
+	at luis3000.msscbreweryclient.web.client.BeerControllerTest.saveNewBeer(BeerControllerTest.java:97)
 
-getBeerById  Time elapsed: 0.006 s  <<< FAILURE!
+getBeerById  Time elapsed: 0.007 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
-	at luis3000.msscbreweryclient.web.client.BeerControllerTest.getBeerById(BeerControllerTest.java:63)
+	at luis3000.msscbreweryclient.web.client.BeerControllerTest.getBeerById(BeerControllerTest.java:64)
 

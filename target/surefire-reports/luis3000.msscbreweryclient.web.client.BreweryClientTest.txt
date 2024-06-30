@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: luis3000.msscbreweryclient.web.client.BreweryClientTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 2.533 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BreweryClientTest
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 2.604 s <<< FAILURE! - in luis3000.msscbreweryclient.web.client.BreweryClientTest
 getCustomerById  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
@@ -12,22 +12,22 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 
-testUpdateBeer  Time elapsed: 0 s  <<< ERROR!
+testUpdateBeer  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 
-getBeerById  Time elapsed: 0.001 s  <<< ERROR!
+getBeerById  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 
-testUpdateCustomer  Time elapsed: 0 s  <<< ERROR!
+testUpdateCustomer  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 
-testSavedNewCustomer  Time elapsed: 0 s  <<< ERROR!
+testSavedNewCustomer  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
@@ -37,7 +37,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 
-testDeleteCustomer  Time elapsed: 0.001 s  <<< ERROR!
+testDeleteCustomer  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerServiceImpl' defined in file [/Users/joseluiscastillo/Documents/Udemy/SpringBootMicroservicesWithSpringCloudAndDocker/Springframeworkguru/mssc-brewery-client/target/classes/luis3000/msscbreweryclient/services/BeerServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'luis3000.msscbreweryclient.web.mappers.BeerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
